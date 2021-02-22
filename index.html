@@ -1,0 +1,586 @@
+
+<!--
+██████╗ ██╗ ██████╗ ██╗████████╗ █████╗ ██╗          ██████╗  ██████╗███████╗ █████╗ ███╗   ██╗
+██╔══██╗██║██╔════╝ ██║╚══██╔══╝██╔══██╗██║         ██╔═══██╗██╔════╝██╔════╝██╔══██╗████╗  ██║
+██║  ██║██║██║  ███╗██║   ██║   ███████║██║         ██║   ██║██║     █████╗  ███████║██╔██╗ ██║
+██║  ██║██║██║   ██║██║   ██║   ██╔══██║██║         ██║   ██║██║     ██╔══╝  ██╔══██║██║╚██╗██║
+██████╔╝██║╚██████╔╝██║   ██║   ██║  ██║███████╗    ╚██████╔╝╚██████╗███████╗██║  ██║██║ ╚████║
+╚═════╝ ╚═╝ ╚═════╝ ╚═╝   ╚═╝   ╚═╝  ╚═╝╚══════╝     ╚═════╝  ╚═════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝
+
+                               ██╗███████╗██╗     ███████╗██╗  ██╗██╗
+                              ██╔╝██╔════╝██║     ██╔════╝╚██╗██╔╝╚██╗
+                              ██║ █████╗  ██║     █████╗   ╚███╔╝  ██║
+                              ██║ ██╔══╝  ██║     ██╔══╝   ██╔██╗  ██║
+                              ╚██╗██║     ███████╗███████╗██╔╝ ██╗██╔╝
+                               ╚═╝╚═╝     ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝
+
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigitalOcean</title>
+
+    <!-- Bootstrap -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"> -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script> -->
+    <!-- Latest compiled and minified JavaScript -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script> -->
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/2e0cc00556.js" crossorigin="anonymous"></script>
+
+    <!-- CSS locale -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+    <body>
+      <header>
+        <nav class="box-no-side">
+          <div>
+            <a href="index.html">
+              <img src="img/logo.png" alt="DigitalOcean logo">
+            </a>
+          </div>
+
+          <ul>
+            <li>
+              <a href="#">
+                Products <i class="fas fa-chevron-down"></i>
+              </a>
+            </li>
+
+            <li><a href="#">Customers</a></li>
+
+            <li>
+              <a href="#">
+                Community <i class="fas fa-chevron-down"></i>
+              </a>
+            </li>
+
+            <li><a href="#">Pricing</a></li>
+          </ul>
+
+          <ul>
+            <li><a href="#">Docs</a></li>
+
+            <li>
+              <a href="#">
+                Support <i class="fas fa-chevron-down"></i>
+              </a>
+            </li>
+
+            <li><a href="#">Login</a></li>
+
+            <li class="lastbtn">
+              <a href="index.html">Sign Up</a>
+            </li>
+          </ul>
+
+          <div class="hamburger">
+            <i class="fas fa-bars"></i>
+
+            <div class="dropdown box-no-side">
+              <ul>
+                <li>
+                  <a href="#">
+                    Products <i class="fas fa-chevron-down"></i>
+                  </a>
+                </li>
+
+                <li><a href="#">Customers</a></li>
+
+                <li>
+                  <a href="#">
+                    Community <i class="fas fa-chevron-down"></i>
+                  </a>
+                </li>
+
+                <li><a href="#">Pricing</a></li>
+
+                <li><a href="#">Docs</a></li>
+
+                <li>
+                  <a href="#">
+                    Support <i class="fas fa-chevron-down"></i>
+                  </a>
+                </li>
+
+                <li><a href="#">Login</a></li>
+
+                <li class="lastbtn">
+                  <a href="index.html">Sign Up</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- jumbotron -->
+        <section class="jumbotitle white-text">
+          <div class="box-no-side">
+            <div class="dxtest">
+              <h2 class="big">
+                The simplest cloud platform for developers &amp; teams
+              </h2>
+              <p class="paragrafo">
+                Deploy, manage, and scale, cloud applications faster and more efficiently on DigitalOcean. We make managing infrastructure easy for teams and business, wheter you're running one virtual machine or ten thousand.
+              </p>
+            </div>
+
+            <div class="googlesign align-center">
+              <h3 class="black-text">Deploy your app in seconds.</h3>
+              <h3 class="blue-text">Get started now.</h3>
+              <form class="" action="index.html" method="post">
+                <input type="email" name="mail" value="" placeholder="Email">
+                <input type="password" name="password" value="" placeholder="Password">
+
+                <a class="btn create" href="#">Create your account</a>
+                <button type="submit" class="btn" id="google">
+                  <img src="img/google-icon.png" alt="Icona Google">
+                  Sign up with Google
+                </button>
+              </form>
+
+              <p class="black-text">
+                By signing up you agree to the
+                <a class="blue-link" href="#">Terms of Service.</a>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!--partners -->
+        <section class="partners greyback">
+          <div class="box-no-side align-center">
+            <h4 class="grey-text">
+              INNOVATIVE BUSINESS TRUST DIGITALOCEAN
+            </h4>
+            <div class="flexa">
+
+                <div class="">
+                  <img src="img/docker.svg" alt="Docker logo">
+                </div>
+
+                <div class="">
+                  <img src="img/gitlab.svg" alt="GitLab logo">
+                </div>
+
+                <div class="">
+                  <img src="img/slack.svg" alt="Slack logo">
+                </div>
+
+                <div class="">
+                  <img src="img/hashicorp.svg" alt="Hashi logo">
+                </div>
+
+                <div class="">
+                  <img src="img/splunklogo.svg" alt="Splunk logo">
+                </div>
+              </div>
+              <a class="blue-link" href="#">
+                View customers sotries &#160;
+                <i class="fas fa-angle-right"></i>
+              </a>
+            </div>
+          </section>
+
+          <!-- Sezione deploy -->
+          <section class="whiteback deploy">
+            <div class="box-no-side align-center">
+              <h2 class="navy-text">Deploy and scale seamlessly</h2>
+              <p class="grey-text paragrafo">
+                Our optimized confuguration process saves your team time when running and scaling distributed applications, AI &amp; machine learning workloads, hosted services, client websites, or CI/CD environments
+              </p>
+
+              <div class="sezioni-deploy">
+                <ul>
+                  <li><a class="grey-text" href="#">Deploy</a></li>
+                  <li><a class="grey-text" href="#">Manage</a></li>
+                  <li><a class="grey-text" href="#">Secure</a></li>
+                  <li><a class="grey-text" href="#">Scale</a></li>
+                  <li><a class="grey-text" href="#">Monitor</a></li>
+                </ul>
+
+                <div class="finestra">
+                  <img src="img/cluster-deploy.svg" alt="Cluster">
+                  <h4 class="navy-text">Cluster deployments</h4>
+                  <p class="grey-text">
+                    Provision multiple Droplets (virtual machines) in seconds with our control panel, CLI, or directly againts our API.
+                  </p>
+                </div>
+
+                <div class="finestra">
+                  <img src="img/one-click.svg" alt="Cartella">
+                  <h4 class="navy-text">One-click apps</h4>
+                  <p class="grey-text">
+                    Skip the install and configuration process with pre-built open source images supporting Rails, Cassandra, Docker, and more.
+                  </p>
+                </div>
+
+                <div class="finestra">
+                  <img src="img/one-click.svg" alt="Folder">
+                  <h4 class="navy-text">Optimized compute types</h4>
+                  <p class="grey-text">
+                    Get the compute resources you need with Standard or Optimized Droplets.
+                  </p>
+                </div>
+
+                <div class="finestra">
+                  <img src="img/global.svg" alt="Global">
+                  <h4 class="navy-text">Global avaiability</h4>
+                  <p class="grey-text">
+                    Deploy to any of our data center regions around the world.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- Sezione designed slide-->
+          <section class="greyback align-center">
+            <div class="box slider">
+              <h2 class="navy-text">Designed for developers</h2>
+              <p class="paragrafo grey-text">Build more and spend less time managing your infrastructure with our easy to use control panel API.</p>
+
+              <div class="slide">
+                <a href="#"><i class="fas fa-chevron-left left"></i></a>
+
+                <img src="img/screenshot-create-droplet-12336b41.jpg" alt="Screen">
+
+                <a href="#"><i class="fas fa-chevron-right right"></i></a>
+              </div>
+
+              <p class="navy-text">
+                Create compute servers in 55 seconds or less.
+              </p>
+              <div class="">
+                <a class="blue-dot clicked" href="#"></a>
+                <a class="blue-dot" href="#"></a>
+                <a class="blue-dot" href="#"></a>
+                <a class="blue-dot" href="#"></a>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- Sezione features-->
+          <section class="whiteback">
+            <div class="box-no-side align-center">
+              <h2 class="navy-text">The Features your business needs</h2>
+
+              <div class="feat">
+                <div class="features align-left">
+                  <img src="img/pred-pricing.svg" alt="Paper">
+                  <h4 class="navy-text">Predictable pricing</h4>
+                  <p class="grey-text">
+                    Leave complex pricing structures behind. Always know what you'll pay per month with a flat, indistry-leading pricing structure.
+                  </p>
+                  <a class="blue-link" href="#">
+                    Pricing &#160;
+                    <i class="fas fa-angle-right"></i>
+                  </a>
+                </div>
+
+                <div class="features align-left">
+                  <img src="img/world-class.svg" alt="Headphones">
+                  <h4 class="navy-text">World-class service</h4>
+                  <p class="grey-text">
+                    Free round-the-clock technical support for all customer. You'll feel the love.
+                  </p>
+                  <a class="blue-link" href="#">
+                    Pricing &#160;
+                    <i class="fas fa-angle-right"></i>
+                  </a>
+                </div>
+
+                <div class="features align-left">
+                  <img src="img/reliable-platform.svg" alt="Shield">
+                  <h4 class="navy-text">Reliable platform</h4>
+                  <p class="grey-text">
+                    More than 100,000 developer teams worldwive trust DigitalOcean to support their business with a  99.9% uptime SLA.
+                  </p>
+                  <a class="blue-link" href="#">
+                    Pricing &#160;
+                    <i class="fas fa-angle-right"></i>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- Sezione region-->
+          <section class="region align-center white-text">
+            <div class="box-no-side">
+              <h2>Service your customers around the world from 12 regions.</h2>
+              <div class="flextable">
+                <table>
+                  <tr>
+                    <td class="white-text">AMS2</td>
+                    <td class="grey-text">Amsterdam, Netherlands</td>
+                    <td>
+                      <a class="blue-link" href="#">
+                        Test Speed &#160;
+                        <i class="fas fa-angle-right"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="white-text">AMS3</td>
+                    <td class="grey-text">Amsterdam, Netherlands</td>
+                    <td>
+                      <a class="blue-link" href="#">
+                        Test Speed &#160;
+                        <i class="fas fa-angle-right"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="white-text">BLR1</td>
+                    <td class="grey-text">Bangalore, India</td>
+                    <td>
+                      <a class="blue-link" href="#">
+                        Test Speed &#160;
+                        <i class="fas fa-angle-right"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="white-text">FRA1</td>
+                    <td class="grey-text">Frankfurt, Germany</td>
+                    <td>
+                      <a class="blue-link" href="#">
+                        Test Speed &#160;
+                        <i class="fas fa-angle-right"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="white-text">LON1</td>
+                    <td class="grey-text">London, UK</td>
+                    <td>
+                      <a class="blue-link" href="#">
+                        Test Speed &#160;
+                        <i class="fas fa-angle-right"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="white-text">NYC1</td>
+                    <td class="grey-text">New York, USA</td>
+                    <td>
+                      <a class="blue-link" href="#">
+                        Test Speed &#160;
+                        <i class="fas fa-angle-right"></i>
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+
+                <table>
+                  <tr>
+                    <td class="white-text">AMS2</td>
+                    <td class="grey-text">Amsterdam, Netherlands</td>
+                    <td>
+                      <a class="blue-link" href="#">
+                        Test Speed &#160;
+                        <i class="fas fa-angle-right"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="white-text">AMS3</td>
+                    <td class="grey-text">Amsterdam, Netherlands</td>
+                    <td>
+                      <a class="blue-link" href="#">
+                        Test Speed &#160;
+                        <i class="fas fa-angle-right"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="white-text">BLR1</td>
+                    <td class="grey-text">Bangalore, India</td>
+                    <td>
+                      <a class="blue-link" href="#">
+                        Test Speed &#160;
+                        <i class="fas fa-angle-right"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="white-text">FRA1</td>
+                    <td class="grey-text">Frankfurt, Germany</td>
+                    <td>
+                      <a class="blue-link" href="#">
+                        Test Speed &#160;
+                        <i class="fas fa-angle-right"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="white-text">LON1</td>
+                    <td class="grey-text">London, UK</td>
+                    <td>
+                      <a class="blue-link" href="#">
+                        Test Speed &#160;
+                        <i class="fas fa-angle-right"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="white-text">NYC1</td>
+                    <td class="grey-text">New York, USA</td>
+                    <td>
+                      <a class="blue-link" href="#">
+                        Test Speed &#160;
+                        <i class="fas fa-angle-right"></i>
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- develop -->
+          <section class="greyback">
+            <div class="box-no-side align-center">
+              <h2 class="navy-text">Development teams love DigitalOcaen</h2>
+
+              <div class="slide-window">
+                <img src="img/rockerbox-logo.webp" alt="Rockerbox logo">
+                <p class="grey-text paragrafo">
+                  "We have been able to make scaling the technical infrasctructure of our business cost effective and efficent"
+                </p>
+
+                <a href="#"><i class="fas fa-chevron-left left"></i></a>
+                <a href="#"><i class="fas fa-chevron-right right"></i></a>
+
+                <h5 class="navy-text">
+                  Rick O'Toole <br>
+                </h5>
+                <div>Co-founder and CTO</div>
+
+                <a class="blue-link" href="#">
+                  Read story &#160;
+                  <i class="fas fa-angle-right"></i>
+                </a>
+              </div>
+
+              <a class="blue-dot clicked" href="#"></a>
+              <a class="blue-dot" href="#"></a>
+              <a class="blue-dot" href="#"></a>
+            </div>
+          </section>
+
+          <!-- Prefooter-->
+          <section class="prefooter white-text">
+            <div class="box align-center">
+              <h2>Get started now.</h2>
+
+              <a href="#"  class="btn btn-primary btn-lg active">
+                Create your account
+              </a>
+            </div>
+          </section>
+        </main>
+
+        <footer>
+          <div class="box-no-side grey-text">
+
+            <div class="">
+              <img src="img/logo-small.svg" alt="Logo Small">
+              <p>&copy; 2018 DigitalOcean, LLC. All rights reserved.</p>
+              <span>Proudly made in NY</span>
+
+              <ul class="non-block">
+                <li>
+                  <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-facebook-square fa-lg"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-youtube fa-lg"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- links -->
+            <ul>
+              <li><h4 class="white-text">Company</h4></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Leadership</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Partner Network</a></li>
+              <li><a href="#">Referral Program</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Legal &amp; Security</a></li>
+            </ul>
+
+            <ul>
+              <li><h4 class="white-text">Products</h4></li>
+              <li><a href="#">Droplets</a></li>
+              <li><a href="#">Spaces</a></li>
+              <li><a href="#">Kubernets</a></li>
+              <li><a href="#">Load Balancers</a></li>
+              <li><a href="#">Block Storage</a></li>
+              <li><a href="#">Tools &amp; Integrations</a></li>
+              <li><a href="#">One-Click Apps</a></li>
+              <li><a href="#">API</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Realese Notes</a></li>
+            </ul>
+
+            <ul>
+              <li><h4 class="white-text">Community</h4></li>
+              <li><a href="#">Tutorials</a></li>
+              <li><a href="#">Meetups</a></li>
+              <li><a href="#">Q&amp;A</a></li>
+              <li><a href="#">Write for Donations</a></li>
+              <li><a href="#">Droplets for Demos</a></li>
+              <li><a href="#">Hatch</a></li>
+              <li><a href="#">Shop Swag</a></li>
+              <li><a href="#">Research Program</a></li>
+              <li><a href="#">Currents Research</a></li>
+              <li><a href="#">Opens Source</a></li>
+            </ul>
+
+            <ul>
+              <li><h4 class="white-text">Support</h4></li>
+              <li><a href="#">Contact support</a></li>
+              <li><a href="#">F&amp;Q</a></li>
+              <li><a href="#">Network Status</a></li>
+            </ul>
+
+          </div>
+      </footer>
+    </body>
+  </html>
